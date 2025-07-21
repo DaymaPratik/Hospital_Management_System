@@ -1,6 +1,6 @@
 .doctorsPage {
   font-family: 'Segoe UI', sans-serif;
-
+    background: #3a1c68;
 }
 
 .hero {
@@ -26,7 +26,7 @@
     height:80vh;
     left: 0px;
     width: 100%;
-    background-color: rgba(55, 26, 83, 0.475);
+    background-color: rgba(27, 10, 44, 0.741);
 
 }
 
@@ -34,16 +34,28 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
   z-index: 10;
+   color: #92b8ff;
 }
 .hero p{
     z-index: 10;
+    font-size: 25px;
+    width: 80%;
 }
 
+
+.meetDoctorsHeading{
+  font-size: 2.5rem;
+  color:white;
+  width: fit-content;
+  padding: 0px 10px;
+  margin: 20px auto;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
-  background: #3a1c68;
   padding: 30px;
 }
 
@@ -119,4 +131,23 @@
 
 .emailBtn:hover {
   background-color: #d8d8d8;
+}
+
+
+@media (max-width:956px){
+  .grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 15px;
+}
+}
+
+@media (max-width:768px){
+
+.hero h1 {
+  font-size: 2rem;
+}
+.hero p{
+    font-size: 20px;
+    width: 90%;
+}
 }

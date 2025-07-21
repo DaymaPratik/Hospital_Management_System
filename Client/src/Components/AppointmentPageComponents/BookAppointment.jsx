@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import styles from './BookAppointment.module.css';
+import { SideBarContext } from '../../Context/SideBarContextProvider';
+import Sidebar from '../SideBar';
 
 const BookAppointment = () => {
+    const { showSideBar ,handleShowSideBar } = useContext(SideBarContext);
+    useEffect(()=>{
+      handleShowSideBar();
+    },[])
   const [formData, setFormData] = useState({
     patientName: '',
     department: '',
@@ -25,6 +31,13 @@ const BookAppointment = () => {
 
   return (
     <div>
+
+
+       {
+                  showSideBar
+                  &&
+                  <Sidebar/>
+              }
       {/* Hero Section */}
       <section  className={styles.appointmentContainer}>
          <section className={styles.introContentCover}>

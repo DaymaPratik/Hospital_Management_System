@@ -1,10 +1,13 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { SideBarContext } from '../Context/SideBarContextProvider'
 import Sidebar from '../Components/SideBar'
 import styles from "./styles/Auth.module.css";
 import { FaUser, FaEnvelope, FaLock, FaPhoneAlt } from 'react-icons/fa';
 function Auth() {
-  const {showSideBar}=useContext(SideBarContext)
+   const { showSideBar ,handleShowSideBar } = useContext(SideBarContext);
+   useEffect(()=>{
+     handleShowSideBar();
+   },[])
     const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
     name: '',

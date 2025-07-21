@@ -1,10 +1,13 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { SideBarContext } from "../Context/SideBarContextProvider";
 import Sidebar from "../Components/SideBar";
 import styles from "./styles/Contact.module.css";
 
 function Contact() {
-  const { showSideBar } = useContext(SideBarContext);
+   const { showSideBar ,handleShowSideBar } = useContext(SideBarContext);
+   useEffect(()=>{
+     handleShowSideBar();
+   },[])
 
   const [formData, setFormData] = useState({
     name: "",
@@ -63,9 +66,11 @@ function Contact() {
           </div>
 
           <div>
+            <div>
             <h3>📞 Phone Support</h3>
-            <p>+91 98765 43210 (Main Reception)</p>
+             <p>+91 98765 43210 (Main Reception)</p>
             <p>+91 98765 43211 (Emergency 24x7)</p>
+           </div>
             <p className={styles.subText}>
               <strong>Working Hours:</strong> Mon-Sat, 8 AM – 8 PM
             </p>

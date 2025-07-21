@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useContext } from "react";
 import Sidebar from "../Components/SideBar";
 import { SideBarContext } from "../Context/SideBarContextProvider";
@@ -33,7 +33,10 @@ import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 import { FaHospitalSymbol } from "react-icons/fa";
 function About() {
-  const { showSideBar } = useContext(SideBarContext);
+  const { showSideBar ,handleShowSideBar } = useContext(SideBarContext);
+  useEffect(()=>{
+    handleShowSideBar();
+  },[])
   const leadershipData = [
     {
       name: "Dr. Anil Sharma",

@@ -7,12 +7,15 @@
 
 .heading {
   font-size: 2rem;
-  color: #2c3e50;
+  color: #3c175e;
   margin: 2rem 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  width: fit-content;
+  border-bottom: 2px solid #3c175e;
+  margin: 0px auto;
 }
 
 .content {
@@ -59,4 +62,25 @@
 .heartIcon {
   color: #e74c3c;
   font-size: 1.5rem;
+}
+
+
+@media (max-width:956px){
+  .text {
+  font-size: 0.9rem;
+  width: 60%;
+}
+}
+
+@media (max-width:768px){
+  .content {
+ flex-direction: column;
+}
+.image {
+ width: 80%;
+ height: 350px;
+}
+  .text {
+  width: 90%;
+}
 }

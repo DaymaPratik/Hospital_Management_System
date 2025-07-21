@@ -26,6 +26,9 @@ const Sidebar = () => {
         <NavLink to="/doctors" className={({ isActive }) => isActive ? styles.active : ""}>
           <FaUserMd /> Doctors
         </NavLink>
+         <NavLink to="/appointment" className={({ isActive }) => isActive ? styles.active : ""}>
+          <FaUserMd /> Appointment
+        </NavLink>
         <NavLink to="/contact" className={({ isActive }) => isActive ? styles.active : ""}>
           <FaEnvelope /> Contact
         </NavLink>

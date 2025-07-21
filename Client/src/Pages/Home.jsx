@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { SideBarContext } from "../Context/SideBarContextProvider";
 import Sidebar from "../Components/SideBar";
 import styles from "./styles/Home.module.css";
@@ -11,7 +11,10 @@ import {
   FaCapsules,
 } from "react-icons/fa";
 function Home() {
-  const { showSideBar } = useContext(SideBarContext);
+  const { showSideBar ,handleShowSideBar } = useContext(SideBarContext);
+  useEffect(()=>{
+    handleShowSideBar();
+  },[])
   const services = [
     {
       icon: <FaAmbulance />,

@@ -1,11 +1,18 @@
+.mainContainer {
+  overflow-x: hidden;
+  height: 80vh;
+  width: 100%;
+  min-height: fit-content;
+  position: relative;
+}
+
 .introSection {
   display: flex;
   align-items: center;
+  overflow-x: hidden;
   justify-content: space-between;
   padding: 4rem 2rem;
   gap: 2rem;
-  height: 100vh;
-  width: 100%;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,7 +32,7 @@
 }
 
 .introContent {
-  max-width: 60%;
+  max-width: 55%;
   color: #ffffff;
   z-index: 2;
 }
@@ -33,6 +40,8 @@
 .introContent h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
+  text-align: center;
+  color: #85d4f6;
 }
 
 .introContent h1 span {
@@ -64,9 +73,11 @@
 .imgContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   z-index: 2;
-  width: 30%;
+  width: 33%;
 }
 
 .introImage1,
@@ -79,20 +90,25 @@
   object-fit: cover;
   animation: upAndDown 1.5s ease-in infinite;
 }
-.introImage2{
-    margin-left: 50px;
+
+.introImage2 {
+  margin-left: 50px;
 }
+
 @keyframes upAndDown {
-    0%{
-        transform: translateY(-15px);
-    }
-    50%{
-        transform: translateY(15px);
-    }
-    100%{
-        transform: translateY(-15px);
-    }
+  0% {
+    transform: translateY(-15px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
 }
+
 
 
 
@@ -108,8 +124,9 @@
 
 .container {
   padding: 3rem 1rem;
-   background: #d3a4ff;
+  background: #d3a4ff;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .heading {
@@ -120,7 +137,7 @@
   margin: 0px auto;
   margin-bottom: 3rem;
   font-weight: 600;
- 
+
 }
 
 .section {
@@ -132,79 +149,93 @@
   width: 95%;
   margin-left: auto;
   margin-right: auto;
-  padding:2rem 1rem;
+  padding: 2rem 1rem;
   background: #c78cff;
-   border-radius: 20px;
-   transition: 0.3s ease;
+  border-radius: 20px;
+  transition: 0.3s ease;
 }
 
 .reverse {
   flex-direction: row-reverse;
 }
 
-.imgBox{
-   width: 450px;
+.imgBox {
+  width: 450px;
   height: 350px;
   position: relative;
-   border-radius: 12px;
+  border-radius: 12px;
 }
-.imgOverlay{
+
+.imgOverlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 350px;
   background: transparent;
   bottom: 0;
-   border-radius: 12px;
+  border-radius: 12px;
 }
-.section:hover .imgBox{
+
+.section:hover .imgBox .image {
   transform: scale(1.02);
   box-shadow: 0px 0px 10px 5px rgba(5, 1, 9, 0.494);
 
 }
-.section:hover .imgOverlay{
-  background: linear-gradient(180deg,transparent,rgba(107, 17, 203, 0.281));
-}
+
+/* .section:hover .imgOverlay {
+  background: linear-gradient(180deg, transparent, rgba(107, 17, 203, 0.281));
+} */
 
 .image {
-  width: 100%;
-  height: 100%;
+  width: 450px;
+  height: 350px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .textBlock {
- position: relative;
+  position: relative;
   text-align: left;
   width: 65%;
   height: fit-content;
+  color: rgb(242, 242, 243);
 }
-.textBlockOverlay{
-    width: 80%;
-    height: 300px;
-    top: 0px;
-    left: 0px;
-    background: rgba(30, 4, 43, 0.574);
-    border-radius: 20px;
-    animation: leftAndRight 1.2s ease-in infinite;
+
+.textBlockOverlay {
+  width: 80%;
+  height: 300px;
+  top: 0px;
+  left: 0px;
+  background: rgba(30, 4, 43, 0.574);
+  border-radius: 20px;
+  animation: leftAndRight 1.2s ease-in infinite;
 }
 
 
 @keyframes leftAndRight {
-    0%{
-        transform: translateX(-15px);
-    }
-    50%{
-        transform: translateX(15px);
-    }
-    100%{
-        transform: translateX(-15px);
-    }
+  0% {
+    transform: translateX(-15px);
+  }
+
+  50% {
+    transform: translateX(15px);
+  }
+
+  100% {
+    transform: translateX(-15px);
+  }
 }
-.textInfo{
-    position: absolute;
-    z-index:10;
-    top: 30px;
-    left: 50px;
+
+
+.textInfo {
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  left: 50px;
+}
+
+.textInfo p {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .iconTitle {
@@ -215,20 +246,16 @@
   margin-bottom: 1rem;
 }
 
-.textBlock p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: rgb(242, 242, 243);
-  font-weight: 600;
+
+.iconTitle .icon {
+  color: #92b8ff;
 }
-.iconTitle .icon{
-    color: white;
-}
-.iconTitle h3{
-    color: white;
-    border-bottom: 2px solid white;
-    font-size: 30px;
-    margin: 0px 5px;
+
+.iconTitle h3 {
+  color: #92b8ff;
+  border-bottom: 2px solid #7a0fd2;
+  font-size: 30px;
+  margin: 0px 5px;
 }
 
 
@@ -237,17 +264,150 @@
 
 
 
-@media (max-width:1024px){
-.image {
-  width: 350px;
-  height: 250px;
-}
-.textInfo{
+@media (max-width:1024px) {
+  .introContent h1 {
+    font-size: 2rem;
+  }
+
+  .imgBox {
+    width: 300px;
+    height: 280px;
+  }
+
+  .image {
+    width: 300px;
+    height: 280px;
+  }
+
+  .textInfo {
     top: 20px;
     left: 30px;
-}
-.iconTitle h3{
+  }
+
+  .textInfo p {
+    font-size: 15px;
+  }
+
+  .iconTitle h3 {
     font-size: 20px;
     margin: 0px 5px;
+  }
 }
+
+
+
+
+@media (max-width:768px) {
+  .introSection {
+    flex-direction: column;
+  }
+
+  .introContent {
+    width: 95%;
+    max-width: 95%;
+  }
+
+  .introContent p {
+    text-align: center;
+  }
+
+  .imgContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introImage1,
+  .introImage2,
+  .introImage3 {
+    width: 200px;
+  }
+
+  .introImage2 {
+    margin-left: 0px;
+  }
+
+
+
+
+
+  .introContent h1 {
+    font-size: 1.5rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+
+  }
+
+  .imgBox {
+    width: 250px;
+    height: 250px;
+  }
+
+  .image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .iconTitle {
+    margin-bottom: 0.5rem;
+  }
+
+  .iconTitle h3 {
+    font-size: 17px;
+  }
+
+  .textInfo p {
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width:640px) {
+  .introContent p {
+    font-size: 15px;
+  }
+
+  .introImage1,
+  .introImage2,
+  .introImage3 {
+    width: 180px;
+  }
+
+  .section {
+    flex-direction: column-reverse;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .imgBox {
+    width: 80%;
+    height: 280px;
+  }
+
+  .image {
+    width: 100%;
+    height: 280px;
+  }
+
+  .textBlock {
+    width: 95%;
+  }
+
+  .textInfo p {
+    font-size: 16px;
+  }
+
+}
+
+
+@media (max-width:450px) {
+  .textInfo p {
+    font-size: 12px;
+  }
 }

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { SideBarContext } from "../Context/SideBarContextProvider";
 import Sidebar from "../Components/SideBar";
 import styles from "./styles/Department.module.css";
@@ -15,7 +15,10 @@ import {
 } from "react-icons/fa";
 
 function Department() {
-  const { showSideBar } = useContext(SideBarContext);
+   const { showSideBar ,handleShowSideBar } = useContext(SideBarContext);
+   useEffect(()=>{
+     handleShowSideBar();
+   },[])
  const departments = [
   {
     name: "Cardiology",
@@ -94,7 +97,7 @@ function Department() {
     <div>
       {showSideBar && <Sidebar />}
 
-      <section>
+      <section className={styles.mainContainer}>
         <section className={styles.introContentCover}></section>
         <section className={styles.introSection}>
           <div className={styles.introContent}>
