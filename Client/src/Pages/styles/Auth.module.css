@@ -1,0 +1,182 @@
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1528747045269-390fe33c19f2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introContentCover {
+    position: absolute;
+    height: 100vh;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(55, 26, 83, 0.475);
+
+}
+
+.heroContent {
+    z-index: 10;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    z-index: 10;
+}
+
+/* .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  padding-left: 50px;
+  background-image: url("https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  overflow-x: hidden;
+}
+.containerOverlay{
+position: absolute;
+height: 100vh;
+ background: linear-gradient(90deg,black,transparent);
+ width: 100%;
+ top: 0px;
+ left: 0px;
+}
+
+.card {
+   background: linear-gradient(to right, #6b11cb9b, #10121588);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  color: whitesmoke;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.54);
+}
+
+.toggleTabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggleButton {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+
+
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid #db3434;
+  color: red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  margin: 0px auto;
+  width: fit-content;
+   margin-bottom: 20px;
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+.inputGroup input:focus {
+  border: 1px solid #3498db;
+  outline: none;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.submitButton {
+  padding: 12px;
+  background: #31095e;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+  border: 2px solid white;
+}
+
+.submitButton:hover {
+  background: #dadada;
+  color: #31095e;
+  box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.508);
+}

@@ -1,0 +1,668 @@
+
+/* ABout US Intro Section */
+.aboutUs {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  background-attachment: fixed;
+}
+
+.overlay {
+  background-color: rgba(13, 2, 22, 0.627);
+  padding: 3rem 2rem;
+ width: 100%;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.intro h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #85d4f6;
+  width: fit-content;
+}
+
+.intro p {
+ width: 95%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: white;
+}
+
+
+
+
+
+/* Why Choose Us InfraStructure */
+
+
+.container {
+  padding: 4rem 2rem;
+  background-color: #f4f8fb;
+  color: #333;
+  line-height: 1.6;
+}
+.headingTeam{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    width: fit-content;
+    padding: 0px 10px;
+    margin: 0px auto;
+}
+
+
+.sectionVission {
+  background: #fff;
+  margin-bottom: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+   padding:50px 30px;
+   display: flex;
+   transition: 0.3 ease-in;
+   justify-content: space-between;
+}
+.vissionImgBox{
+    width: 45%;
+    position: relative;
+     height: 300px;
+}
+.vissionImgOverlay{
+  position: absolute;
+  height: 330px;
+  top: 0;
+  left: 60px;
+  border-radius: 20px;
+  width: 90%;
+  transition: 0.3s ease-in;
+}
+
+.image {
+  height: 95%;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in;
+  width: 85%;
+  margin: 0px auto;
+  transition: 0.3s ease;
+}
+.icon {
+  color: white;
+  font-size: 2rem;
+  transition:  0.8s ease;
+}
+
+.sectionVission:hover {
+  transform: translateY(-15px);
+}
+
+
+.sectionVission:hover .image{
+    scale: 1.02;
+    box-shadow: 0px 0px 20px 3px rgb(56, 17, 56);
+}
+.sectionVission:hover .vissionImgOverlay{
+  background: linear-gradient(180deg,rgba(2, 58, 93, 0.339),rgba(107, 17, 203, 0.281));
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2a2e83;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.list {
+  margin-top: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.list li svg {
+  color: #3b82f6;
+}
+
+
+.vissionText {
+ width: 50%;
+}
+
+.vissionText h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1ecbe1;
+}
+
+.vissionText p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+ /* Why Choose Us  / InfraStructure /Commnuity & CSR */
+
+
+.infraSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 4rem 0;
+  flex-direction: row;
+}
+.contentCOntainer{
+     width: 50%;
+     height:100%;
+}
+
+.contentCOntainer h2{ 
+border-bottom:2px solid #39155f ;
+  padding: 5px 20px;
+}
+.imgContainer{
+    width: 50%;
+}
+.imgContainer img{
+    width: 100%;
+    height: 400px;
+    margin: 0px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 3px black;
+
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+
+.icon {
+  margin-right: 0.5rem;
+  color: #ffde59;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Meet Our Expert Team */
+.teamSection {
+  background: linear-gradient(135deg, #3a1c68, #6a11cb);
+  padding: 4rem 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headingTeam {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #d1c4e9;
+}
+.quotePara{
+    text-align: right;
+    font-size:20px ;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 25px;
+    font-weight: 600;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  color: #451256;
+}
+.card:hover .icon {
+  background: linear-gradient(to right, #39155f, #0a1a35);
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(26, 9, 38, 0.954);
+  color: white;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #451256;
+  
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+ 
+}
+
+.card p {
+  font-size: 0.95rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:956px){
+.intro p {
+  font-size: 1.1rem;
+}
+.sectionVission {
+   padding:50px 10px;
+}
+.vissionText p{
+  font-size: 15px;
+}
+.vissionImgOverlay{
+  height: 320px;
+  left: 30px;
+}
+}
+
+@media (max-width:768px){
+
+.intro h1 {
+  font-size: 2rem;
+}
+
+.intro p {
+  font-size: 0.7rem;
+}
+.sectionVission {
+ flex-direction: column;
+ align-items: center;
+}
+.vissionImgOverlay{
+  width: 100%;
+}
+.vissionText{
+  width: 90%;
+}
+.vissionImgBox{
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+
+
+
+.infraSection{
+  flex-direction: column;
+}
+.contentCOntainer{
+  width: 90%;
+}
+.contentCOntainer h2{
+  width: fit-content;
+  margin: 10px auto;
+}
+.contentCOntainer p{
+  text-align: center;
+}
+.imgContainer{
+  width: 90%;
+}
+.imgContainer img{
+  height: 350px;
+}
+}
+
+@media (max-width:540px){
+  .intro h1 {
+  font-size: 1.5rem;
+}
+  .vissionImgBox{
+    height: 250px;
+    width: 85%;
+  }
+  .vissionImgOverlay{
+    height: 300px;
+  }
+  .vissionText{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .vissionText h2{
+    text-align: center;
+  }
+
+
+
+.contentCOntainer{
+  width: 95%;
+}
+}
+
+
+
+
+
+
+
+
+/* Dicover Section */
+
+.teamDiscover {
+  background: linear-gradient(135deg, white,whitesmoke);
+  padding: 4rem 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.contentDiscover {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.headingDiscover {
+  font-size: 3rem;
+  font-weight: bold;
+  width: fit-content;
+  padding: 5px 20px;
+  border-bottom: 2px solid #451256;
+  margin: 30px auto;
+}
+
+.subheadingDiscover {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: #291948;
+  line-height: 1.6;
+}
+
+.cardsDiscover {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.cardDiscover {
+  background: linear-gradient(135deg, #3a1c68, #6a11cb) ;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+.discoverIconAndHeadBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardDiscover:hover {
+    box-shadow: 0px 0px 20px 3px black;
+  transform: translateY(-5px);
+  background:  linear-gradient(135deg, rgb(22, 22, 76),#1b0c2c);
+}
+
+.iconDiscover {
+  margin-bottom: 1rem;
+  color: #ffccff;
+  transition: 0.5s ease-in;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 90%;
+ 
+}
+.cardDiscover:hover .iconDiscover{
+    transform: rotate(360deg);
+    scale: 1.05;
+  
+    box-shadow: 0px 0px 10px 1px white;
+   
+}
+
+.cardDiscover h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #f3e5f5;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+  padding: 5px 0px;
+}
+
+.cardDiscover p {
+  font-size: 0.95rem;
+  color: #e1bee7;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Leadership Section */
+
+
+.leadershipSection {
+  background: linear-gradient(135deg, #2a0845, #6441a5);
+  color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.containerLeader {
+  max-width: 1300px;
+  margin: 0 auto;
+ 
+}
+
+.headingLeader {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+  width: fit-content;
+  margin: 20px auto;
+  border-bottom: 2px solid white;
+  padding: 5px 20px;
+}
+
+.subheadingLeader {
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+  color: #e0d4f5;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  padding: 0 1rem;
+}
+
+.cardLeader {
+  background-color: whitesmoke;
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.image {
+  width: 80%;
+  height: 280px;
+  margin: 0px auto;
+  /* object-fit: cover; */
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.role {
+  font-size: 1rem;
+ 
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.bio {
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+.socialLinks{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.socialLinks a {
+  margin: 0 0.5rem;
+  font-size: 1.3rem;
+  color: #3a1c68;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 25px;
+  gap: 5px;
+  font-weight: 600;
+}
+
+.changeBgLeader {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 10;
+}
+
+/* Overlay Background */
+.changeBgLeader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(31, 11, 48, 0.7);
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  z-index: 1;
+  transition: all 0.5s ease-in;
+}
+
+/* Overlay Text Content */
+.overlayContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+.overlayContent h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.overlayContent p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.changeBgLeader:hover::before {
+  transform: translateY(0%);
+}
+
+.changeBgLeader:hover .overlayContent {
+  opacity: 1;
+}
+
+.changeBgLeader:hover {
+  color: white;
+  box-shadow: 0px 0px 10px 1px black;
+  border: none;
+}
+
+.cardLeader:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}

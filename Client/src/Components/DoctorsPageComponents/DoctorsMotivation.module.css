@@ -1,0 +1,62 @@
+.container {
+  padding: 3rem 2rem;
+  background: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin: 2rem 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 4rem auto;
+  width:90%;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+   color: #34495e;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.image {
+ width: 40%;
+ height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  width: 50%;
+}
+
+.footerNote {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  color: #2980b9;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.heartIcon {
+  color: #e74c3c;
+  font-size: 1.5rem;
+}
