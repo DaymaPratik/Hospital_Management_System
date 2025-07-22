@@ -7,7 +7,7 @@ const Register = () => {
     name: '',
     email: '',
     password: '',
-    mobile: '',
+    phonenumber: '',
   });
 
   const handleChange = e => {
@@ -52,10 +52,10 @@ const Register = () => {
           <FaPhoneAlt className={styles.icon} />
           <input
             type="tel"
-            name="mobile"
-            placeholder="Mobile Number"
+            name="phonenumber"
+            placeholder="phonenumber Number"
             required
-            value={formData.mobile}
+            value={formData.phonenumber}
             onChange={handleChange}
           />
         </div>
