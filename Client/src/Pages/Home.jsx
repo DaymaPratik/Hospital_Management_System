@@ -10,6 +10,7 @@ import {
   FaBaby,
   FaCapsules,
 } from "react-icons/fa";
+import DiagnosticsShowcase from "../Components/AdminDashboardComponenets/DiagnosticsShowcase";
 function Home() {
   const { showSideBar ,handleShowSideBar } = useContext(SideBarContext);
   useEffect(()=>{
@@ -319,6 +320,12 @@ function Home() {
           ))}
         </div>
       </section>
+
+
+
+
+
+      <DiagnosticsShowcase/>
     </main>
   );
 }

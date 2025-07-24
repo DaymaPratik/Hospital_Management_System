@@ -1,0 +1,228 @@
+.doctorsPage {
+  font-family: 'Segoe UI', sans-serif;
+    background: #3a1c68;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.introContentCover {
+    position: absolute;
+    height:80vh;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(27, 10, 44, 0.741);
+
+}
+.heroContent{
+    z-index: 10;
+}
+
+.heroContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  z-index: 10;
+   color: #92b8ff;
+}
+.heroContent p{
+    z-index: 10;
+    font-size: 25px;
+    width: 80%;
+}
+
+
+
+.dashboardContainer {
+  background: #f3f4f6;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+  width: fit-content;
+  margin: 30px auto;
+}
+
+.statsSection {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.statCard {
+ background: #3a1c68;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+.statCard h2 {
+  color: #e9eaee;
+  font-size: 1.5rem;
+  text-align: center;
+  width: fit-content;
+  margin: 0px auto;
+}
+
+.statCard p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #edeff1;
+  text-align: center;
+}
+.formContainer{
+     background: #3a1c68;
+     padding: 50px 0px ;
+}
+.addDoctorTittle{
+    font-size: 35px;
+    text-align: center;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 5px 20px;
+    border-bottom: 2px solid #f5f6f8;
+    color: white;
+}
+.formSection {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.doctorForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.doctorForm input,
+.doctorForm select {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.doctorForm button {
+  grid-column: span 2;
+  padding: 0.8rem;
+   background: #3a1c68;
+   width: fit-content;
+   margin: 0px auto;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.doctorForm button:hover {
+  background: #21033b;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.doctorsTittle{
+    font-size: 35px;
+    width: fit-content;
+    margin: 20px auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem ;
+}
+
+.card {
+  background: #3a1c68;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.imageWrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 4px solid #dce9fd;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  margin-bottom: 0.5rem;
+  color: #eeeff3;
+  font-size: 1.3rem;
+}
+
+.info p {
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+  color: #f5f6f7;
+}
+

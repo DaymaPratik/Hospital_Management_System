@@ -1,0 +1,37 @@
+.salaryContainer {
+  background-color: #ecfdf5;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+}
+
+.salaryContainer h2 {
+  color: #047857;
+  margin-bottom: 0.5rem;
+}
+
+.salaryContainer p {
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.salaryList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.salaryItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #d1fae5;
+  font-size: 1rem;
+}
+
+.total {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #065f46;
+}

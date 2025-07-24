@@ -7,10 +7,14 @@ import {
   FaEnvelope,
   FaSignInAlt,
 } from "react-icons/fa";
+import { IoLogOut } from "react-icons/io5";
 
 import styles from "./styles/SideBar.module.css";
+import { AdminContext } from "../Context/AdminContextProvider";
+import { useContext } from "react";
 
 const Sidebar = () => {
+   const { user, handleLogout } = useContext(AdminContext);
   return (
     <div className={styles.sidebar}>
       <nav className={styles.nav}>
@@ -26,7 +30,20 @@ const Sidebar = () => {
         <NavLink to="/doctors" className={({ isActive }) => isActive ? styles.active : ""}>
           <FaUserMd /> Doctors
         </NavLink>
-         <NavLink to="/appointment" className={({ isActive }) => isActive ? styles.active : ""}>
+         {
+          user.name
+          ?
+          <NavLink
+                        to="/login"
+                        activeclassname={styles.active}
+                        onClick={handleLogout}
+                      >
+                        <IoLogOut/>
+                        Logout
+                      </NavLink>
+          :
+          <>
+          <NavLink to="/appointment" className={({ isActive }) => isActive ? styles.active : ""}>
           <FaUserMd /> Appointment
         </NavLink>
         <NavLink to="/contact" className={({ isActive }) => isActive ? styles.active : ""}>
@@ -34,7 +51,8 @@ const Sidebar = () => {
         </NavLink>
         <NavLink to="/login" className={({ isActive }) => isActive ? styles.active : ""}>
           <FaSignInAlt /> Login / Signup
-        </NavLink>
+        </NavLink></>
+         }
       </nav>
     </div>
   );

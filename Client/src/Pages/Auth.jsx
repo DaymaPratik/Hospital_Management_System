@@ -6,10 +6,11 @@ import "react-toastify/dist/ReactToastify.css";
 import Sidebar from "../Components/SideBar";
 import { SideBarContext } from "../Context/SideBarContextProvider";
 import styles from "./styles/Auth.module.css";
+import { AdminContext } from "../Context/AdminContextProvider";
 
 function Auth() {
   const { showSideBar, handleShowSideBar } = useContext(SideBarContext);
-
+  const {user,setUser}=useContext(AdminContext)
   useEffect(() => {
     handleShowSideBar();
   }, []);
@@ -46,16 +47,16 @@ function Auth() {
       });
 
       const data = await res.json();
-
+      console.log(data);
+      
       if (res.ok) {
-        // localStorage.setItem("jwtToken", data.token);
         toast.success(
           isLogin ? "Login successful!" : "Registered successfully!"
         );
 
         isLogin &&
           setTimeout(() => {
-            navigate("/");
+            navigate("/dashboard");
           }, 1000);
 
         setFormData({
@@ -64,6 +65,10 @@ function Auth() {
           password: "",
           phonenumber: "",
         });
+        setUser(data.user)
+        localStorage.setItem('user',JSON.stringify(data.user))
+         localStorage.setItem('token',JSON.stringify(data.token))
+        
       } else {
         toast.error(
           data.message || (isLogin ? "Login failed." : "Registration failed.")
@@ -79,6 +84,7 @@ function Auth() {
 
   return (
     <div>
+       <ToastContainer position="top-center" autoClose={3000} />
       {showSideBar && <Sidebar />}
 
       <section className={styles.appointmentContainer}>
@@ -188,7 +194,7 @@ function Auth() {
         </div>
       </div>
 
-      <ToastContainer position="top-right" autoClose={3000} />
+     
     </div>
   );
 }

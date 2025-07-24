@@ -8,13 +8,17 @@ import Contact from './Pages/Contact';
 import Auth from './Pages/Auth';
 import SideBarContextProvider from './Context/SideBarContextProvider';
 import BookAppointment from './Components/AppointmentPageComponents/BookAppointment';
+import AdminDashboard from './Pages/AdminDashboard';
+import Footer from './Components/Footer';
+import AdminContextProvider from './Context/AdminContextProvider';
 // import BookAppointment from '../Components/AppointmentPageComponents/BookAppointment'
 
 export default function App() {
   return (
     <BrowserRouter>
      <SideBarContextProvider>
-       <Navbar />
+       <AdminContextProvider>
+        <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -23,7 +27,10 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Auth />} />
         <Route path='/appointment' element={<BookAppointment/>}/>
+        <Route path='/dashboard' element={<AdminDashboard/>}/>
       </Routes>
+      <Footer/>
+       </AdminContextProvider>
      </SideBarContextProvider>
     </BrowserRouter>
   );

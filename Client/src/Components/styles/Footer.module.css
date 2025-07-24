@@ -1,0 +1,94 @@
+.footer {
+  background: #3a1c68;
+  color: #ffffff;
+  padding: 2rem 1.5rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  border-bottom: 1px solid #f7f8fa;
+  padding-bottom: 1.5rem;
+}
+
+.logoSection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #f2f3f4;
+  font-weight: 600;
+}
+
+.logoSection p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+.links h4,
+.contact h4,
+.social h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #93c5fd;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+
+.contact p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+.social .icons a {
+  margin-right: 10px;
+  color: #e5e7eb;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social .icons a:hover {
+  color: #3b82f6;
+}
+
+.bottomBar {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #f9f9fa;
+}
+
+.socialList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socialList li {
+  margin-bottom: 10px;
+}
+
+.socialList a {
+  color: #e5e7eb;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.socialList a:hover {
+  color: #3b82f6;
+}
+
+.icon {
+  font-size: 1.1rem;
+}

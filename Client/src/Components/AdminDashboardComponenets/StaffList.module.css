@@ -1,0 +1,80 @@
+.staffContainer {
+  padding: 2rem;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.heading {
+  font-size: 1.8rem;
+  color: #1f2937;
+  margin: 0px auto;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+  
+}
+
+.subHeading {
+  color: #6b7280;
+   margin: 0px auto;
+  margin-bottom: 2rem;
+   width: fit-content;
+   font-size: 1.5rem;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #3a1c68;
+  border-radius: 7px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.cardContent h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: white;
+}
+.cardContent p{
+    color: white;
+}
+
+.roleTag {
+  display: inline-block;
+  margin: 0.5rem 0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+}
+
+.Nurse {
+  background-color: #10b981;
+}
+
+.WardBoy {
+  background-color: #f59e0b;
+}
+
+.Receptionist {
+  background-color: #6366f1;
+}
