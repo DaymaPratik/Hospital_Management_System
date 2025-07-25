@@ -47,6 +47,7 @@ export default function Navbar() {
           </NavLink>
         </li>
         {user?.name ? (
+          <>
           <li>
             <NavLink
               to="/login"
@@ -57,6 +58,16 @@ export default function Navbar() {
               Logout
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/dashboard"
+              activeclassname={styles.active}
+            >
+              <IoLogOut />
+             Dashboard
+            </NavLink>
+          </li>
+          </>
         ) : (
           <>
             <li>
